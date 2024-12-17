@@ -44,16 +44,32 @@ a {
     color: white;
   }
 
-    .image-container {
-    width: 400px; /* Defina a largura desejada */
-    height: 400px; /* Defina a altura desejada */
-    overflow: hidden; /* Esconde as partes da imagem que excederem o contêiner */
-    margin-left: auto;
-    margin-right: auto;
-    /*margin-top: auto;*/
-    margin-bottom: -55px; 
-    } 
-    .image-container img {
-     width: 100%; /* Ajusta a largura da imagem ao tamanho do contêiner */
-     height: auto; /* Mantém a proporção da imagem */
+
+
+.image-container {
+  width: 400px; /* Defina a largura desejada */
+  height: 400px; /* Defina a altura desejada */
+  overflow: hidden; /* Esconde as partes da imagem que excederem o contêiner */
+  margin-left: auto;
+  margin-right: auto;
+  /*margin-top: auto;*/
+  margin-bottom: -55px; 
+  } 
+.image-container img {
+  width: 100%; /* Ajusta a largura da imagem ao tamanho do contêiner */
+  height: auto; /* Mantém a proporção da imagem */
+  }
+
+
+.centered-container2 {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     height: 100vh; /* Altura total da tela */
+     text-align: center; /* Centraliza o texto dentro do contêiner */
+     }
+.email-display {
+     display: none;
+     margin-top: 20px;
     }
