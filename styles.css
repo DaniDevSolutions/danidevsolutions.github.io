@@ -1,6 +1,7 @@
 
 body {
-    background-color: cornsilk;
+    /*background-color: cornsilk;*/
+    background-color:rgb(216, 248, 255);
     /* background-image:url(https://img.freepik.com/premium-photo/lots-cats-illustration-ai-generated-image_20029-2276.jpg?w=740);*/
     font-family:sans-serif;
     padding:20px;
@@ -19,8 +20,13 @@ body {
     border: 5px;
     }
 
+.centered-container {
+    text-align: center;
+}
+
 footer {
-    text-align: center
+    text-align: center;
+    font-size: 12px;
 }
 
 a {
