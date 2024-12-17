@@ -1,0 +1,53 @@
+
+body {
+    background-color: cornsilk;
+    /* background-image:url(https://img.freepik.com/premium-photo/lots-cats-illustration-ai-generated-image_20029-2276.jpg?w=740);*/
+    font-family:sans-serif;
+    padding:20px;
+}
+
+.established{
+    font-style: italic;
+    text-align: center
+}
+
+.projects{
+    font-size: 24px;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border: 5px;
+    }
+
+footer {
+    text-align: center
+}
+
+a {
+    color: black;
+  }
+  
+  a:visited {
+    color: grey;
+  }
+  
+  a:hover {
+    color: brown;
+  }
+  a:active {
+    color: white;
+  }
+
+    .image-container {
+    width: 400px; /* Defina a largura desejada */
+    height: 400px; /* Defina a altura desejada */
+    overflow: hidden; /* Esconde as partes da imagem que excederem o contêiner */
+    margin-left: auto;
+    margin-right: auto;
+    /*margin-top: auto;*/
+    margin-bottom: -55px; 
+    } 
+    .image-container img {
+     width: 100%; /* Ajusta a largura da imagem ao tamanho do contêiner */
+     height: auto; /* Mantém a proporção da imagem */
+    }
