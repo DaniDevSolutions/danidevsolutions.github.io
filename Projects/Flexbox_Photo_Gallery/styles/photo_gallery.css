@@ -1,0 +1,47 @@
+/* "*" is the global/universal  selector . It targets all elements on the page, applying the specified styles to each of them.*/
+* {
+    box-sizing: border-box; /*border-box: The content of the element will shrink to make room for the padding and border.*/
+  }
+  
+  body {
+    margin: 0;
+    font-family: sans-serif;
+    background: #f5f6f7;
+  }
+  
+  .header {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 32px;
+    background-color: #0a0a23;
+    color: #fff;
+    border-bottom: 4px solid #fdb347;
+  }
+  
+  .gallery {
+    display: flex; /*flex: The flex CSS property sets how a flex item will grow or shrink to fit the space available in its flex container.*/
+    flex-direction: row; /*row: The flex container's main-axis is horizontal.*/
+    flex-wrap: wrap; /*wrap: The flex container is single-line or multi-line, based on the size of the container.*/
+    justify-content: center;
+    align-items: center;
+    gap: 16px; /*gap: The gap CSS property sets the gaps (gutters) between rows and columns. It is a shorthand for row-gap and column-gap.*/
+    max-width: 1400px; 
+    margin: 0 auto; /* centers the element on the page */
+    padding: 20px 10px;
+    /*border: 4px solid red*/
+  }
+  
+  .gallery img {
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    /*border: 2px solid blue*/
+  }
+  
+  .gallery::after {
+    content: "";
+    width: 350px;
+  }
+  

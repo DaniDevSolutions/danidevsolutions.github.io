@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="survey_form.css"/>
+  </head>
+
+  <body>
+  <h1 id="title">Satisfaction Survey - Dani Dev Solutions</h1>
+    <p id="description">Thank you for choosing us and taking the time to help us improve</p>
+
+  <form id="survey-form">
+    <label id="name-label" for="name" >Name: <input id="name" type="text" required placeholder="Type your name here"/></label>
+    <label id="email-label" for="email" >Email: <input id="email" type="email" required placeholder="Type your email address here"/></label>
+    <label id="number-label" for="number">Age: <input id="number" type="number" min="5" max="130" placeholder="Type your age here" required/></label>
+    
+  <!-- Dropdown-->
+  <label for="dropdown">What is your current occupation?
+    <select id="dropdown">
+      <option value="">(select one)</option>
+      <option value="1">Self-Employed</option>
+      <option value="2">Unemployed</option>
+      <option value="3">Freelancer</option>
+      <option value="4">Retired</option>
+      <option value="5">Intern</option>
+      <option value="6">Volunteer</option>
+      <option value="7">Looking for Work</option>
+      <option value="9">Part-Time Worker</option>
+      <option value="10">Full-Time Worker</option>
+      <option value="11">Business Owner</option>
+      <option value="12">Other</option>
+    </select>
+    </label>
+
+<fieldset>
+  <!-- Radio buttons-->
+  <legend id="radio-legend">Would you recommend Dani Dev Solutions to others, such as friends, clients, or business partners?</legend>
+    <label for="absolutely" class="chkrad"><input id="absolutely" type="radio" name="recommendation" checked value="Absolutely" class="inline"/> Absolutely</label>
+    <label for="probably" class="chkrad"><input id="probably" type="radio" name="recommendation" value="Probably" class="inline"/> Probably</label>    
+    <label for="maybe" class="chkrad"><input id="maybe" type="radio" name="recommendation" value="Maybe" class="inline"/> Maybe</label>
+    <label for="probably-not" class="chkrad"><input id="probably-not" type="radio" name="recommendation" value="Probably Not" class="inline"/> Probably Not</label>
+    <label for="definitely-not" class="chkrad"><input id="definitely-not" type="radio" name="recommendation" value="Definitely Not" class="inline"/> Definitely Not</label>
+
+
+  <!-- Checkboxes-->
+   <legend id="checkboxes-legend">What would you like to see improved?</legend>
+    <label for="ui-design" class="chkrad">
+    <input id="ui-design" type="checkbox" required name="ui-design" value="User Interface Design" class="inline"/> User Interface Design</label>
+    <label for="content-quality" class="chkrad">
+    <input id="content-quality" type="checkbox" required name="content-quality" value="Content Quality" class="inline"/> Content Quality</label>
+    <label for="dev-time" class="chkrad">
+    <input id="dev-time" type="checkbox" required name="dev-time" value="Development Time" class="inline"/> Development Time</label>
+    <label for="cost-mgm" class="chkrad">
+    <input id="cost-mgm" type="checkbox" required name="cost-mgm" value="Cost Management" class="inline"/> Cost Management</label>
+</fieldset>   
+
+  <!--Comments-->
+  <label for="comments">Do you have any feedback or ideas for improvement?
+  <textarea id="comments" rows="4" cols="30" placeholder="Type your comments here"></textarea>
+  </label>
+
+  <!--Submit button-->
+  <input id="submit" type="submit" value="Submit" />
+
+  </form>
+ 
+  </body>
+  
+  </html>

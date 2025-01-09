@@ -1,10 +1,26 @@
 
 body {
     /*background-color: cornsilk;*/
-    background-color:rgb(216, 248, 255);
-    /* background-image:url(https://img.freepik.com/premium-photo/lots-cats-illustration-ai-generated-image_20029-2276.jpg?w=740);*/
+    /*background-color:rgb(216, 248, 255);
+    
+    /*background-image:url(https://img.freepik.com/premium-photo/lots-cats-illustration-ai-generated-image_20029-2276.jpg?w=740);*/
+    /*background: rgb(202,252,255);*/
+    /*background: linear-gradient(180deg, rgba(202,252,255,1) 0%, rgba(111,125,125,1) 100%);*/
+    border-width: auto; /* Defina a largura desejada */
+    height: fit-content; /* Defina a altura desejada */
+    /*width: 100vw;
+    height: 100vh;*/
+    background: rgb(206,211,215);
+    background:
+      linear-gradient(180deg, rgba(206,211,215,1) 0%, rgba(255,255,255,1) 12%, rgba(255,255,255,1) 85%, rgba(206,211,215,1) 100%),
+      linear-gradient(0deg, rgba(206,211,215,1) 0%, rgba(255,255,255,1) 12%, rgba(255,255,255,1) 85%, rgba(206,211,215,1) 100%);
     font-family:sans-serif;
     padding:20px;
+    margin-top: 4%;
+    margin-bottom: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    /*border: 25px solid red;*/ /* Define a largura, o estilo e a cor da borda */
 }
 
 .established{
@@ -27,6 +43,7 @@ body {
 footer {
     text-align: center;
     font-size: 12px;
+    margin-top: 2%;
 }
 
 a {
@@ -48,12 +65,12 @@ a {
 
 .image-container {
   width: 400px; /* Defina a largura desejada */
-  height: 400px; /* Defina a altura desejada */
+  height: fit-content; /* Defina a altura desejada */
   overflow: hidden; /* Esconde as partes da imagem que excederem o contêiner */
   margin-left: auto;
   margin-right: auto;
-  /*margin-top: auto;*/
-  margin-bottom: -55px; 
+  margin-top: auto;
+  margin-bottom: auto; 
   } 
 .image-container img {
   width: 100%; /* Ajusta a largura da imagem ao tamanho do contêiner */

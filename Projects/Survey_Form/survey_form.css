@@ -1,0 +1,71 @@
+body{
+    width: 100vw; 
+    height: 100vh;/*100% of the viewport height*/
+    background:
+      linear-gradient(180deg, rgba(206,211,215,1) 0%, rgba(255,255,255,1) 12%, rgba(255,255,255,1) 85%, rgba(206,211,215,1) 100%),
+      linear-gradient(0deg, rgba(206,211,215,1) 0%, rgba(255,255,255,1) 12%, rgba(255,255,255,1) 85%, rgba(206,211,215,1) 100%);
+    font-family:sans-serif;
+    font-size: 1.3em;
+    padding:20px;
+    margin: 1% auto 35%;
+  }
+
+  h1, p {
+    margin: 1em auto;/*Center the "text box"*/
+    text-align: center;/*Center the text*/
+  }
+
+  form {
+    width: 70vw;/*70% of the viewport width*/
+    max-width: 550px;
+    min-width: 350px;
+    margin: 2em auto; /* Center the form */
+    padding: 1em;
+    background-color: #CED3D6;
+  }
+
+  label:first-of-type {
+  margin-top: 0em;
+  }
+
+
+  label{
+    display: block;/*Display the label in a new line, default display is for label is inline (it doesn't start a new line*/
+    margin: 0.8em auto 0;/*Add some space between the label (which ends after the input) and the next label*/
+  }
+
+  legend {
+    margin: 0.7em auto 0.3em;/*Add some space between the label and the input*/
+  }
+
+#dropdown-legend {
+  margin-bottom: 0;
+  }
+
+  input,
+  textarea,
+  select {
+    margin: 0.5em 0;/*Add some space between the input and the next element*/
+    width: 100%;/*Make the input fill the entire width of the parent element*/
+    min-height: 2.4em;
+    box-sizing: border-box;/* select and input had different widths, make box-sizing properties for select and input equal; */
+  }
+
+/*for radio buttons and checkboxes*/
+  .inline {
+    width: unset;/*Remove the width set in the "input, textarea, select" selector, */
+    margin: 0;
+    vertical-align: middle;
+  }
+
+  fieldset {
+    display:inline;
+    border: none;/*Remove default border*/
+    margin: 0.5em 0 0;
+    padding:0;
+   }
+
+/*overrides margin sizes for labels of checkboxes and radio buttons*/
+  .chkrad{
+  margin: 0 auto;
+  }

@@ -1,0 +1,80 @@
+body {
+    width: 100%; 
+    height: 100vh;/*100% of the viewport height*/
+    margin: 0;/*Remove default margin*/
+    background-color: #1b1b32;
+    color: #f5f6f7;/*Text color*/
+    font-family: Tahoma;
+    font-size: 16px;
+  }
+  
+  h1, p {
+    margin: 1em auto;/*Center the "text box"*/
+    text-align: center;/*Center the text*/
+  }
+  
+  form {
+    width: 60vw;/*60% of the viewport width*/
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto; /* Center the form */
+    padding-bottom: 2em; /* Bottom padding to prevent the submit button from being hidden */
+  }
+  
+  fieldset {
+    border: none;/*Remove default border*/
+    padding: 2rem 0;/*Padding top and bottom*/
+    border-bottom: 3px solid #3b3b4f;
+  }
+  
+  fieldset:last-of-type {
+    border-bottom: none;
+  }
+  
+  label {
+    display: block;/*Display the label in a new line, defalut display is inline (it doesn't start a new line*/
+    margin: 0.5rem 0;/*Add some space between the label and the input*/
+  }
+  
+  input,
+  textarea,
+  select {
+    margin: 10px 0 0 0;/*Add some space between the input and the next element*/
+    width: 100%;/*Make the input fill the entire width of the parent element*/
+    min-height: 2em;
+  }
+  
+  input, textarea {
+    background-color: #0a0a23;
+    border: 1px solid #0a0a23;
+    color: #ffffff;
+  }
+  
+  /*For the Radio buttons and checkboxes*/
+  .inline {
+    width: unset;/*Remove the width set in the "input, textarea, select" selector*/
+    margin: 0 0.5em 0 0;/*Add some space between the input and the next element*/
+    vertical-align: middle;
+  }
+  
+  input[type="submit"] {
+    display: block;/*Display the submit button in a new line*/
+    width: 60%;/*Make the submit button fill 60% of the width of the parent element*/
+    margin: 1em auto;/*Center the submit button*/
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #3b3b4f;
+    border-color: white;
+    min-width: 300px;
+  }
+  
+  input[type="file"] {
+    padding: 1px 2px; /* Adjustment for file button. Other input elements already have this padding*/
+  }
+  
+  .inline{
+    display: inline;/*Make the elements display in the same line*/
+  }
+  
+  
+  

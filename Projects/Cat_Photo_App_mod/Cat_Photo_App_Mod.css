@@ -1,0 +1,82 @@
+h1 {
+    text-align: center;
+}
+
+h1,h2 {
+    font-family: Impact,serif;
+}
+
+ul {
+    list-style-position: outside;     /*markers are not considered part of the text*/ 
+    text-align: left;                 /*moves the "numbers" to the left, respecting the margin below*/
+    margin-left: 44%
+  }
+ol {
+    list-style-position: outside;    /*numbers are not considered part of the text*/
+    text-align: left;                /*moves the "numbers" to the left, respecting the margin below*/
+    margin-left: 44%
+  }
+
+
+     /* using Flexbox - DID NOT WORK - points were not aligned*/
+    /*
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+  
+     li {
+        text-align: left;
+    }
+    */
+
+body {
+    background-color: cornsilk;
+    background-image:url(https://img.freepik.com/premium-photo/lots-cats-illustration-ai-generated-image_20029-2276.jpg?w=740);
+    font-family:sans-serif;
+    padding:20px;
+}
+
+
+#main-header {
+    width: 80%;
+    background-color: burlywood;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2px;
+}
+
+.center-this-h2 {
+    text-align: center;
+} /* centers only the h2 element using class: Class: Use when you want to style multiple elements similarly, such as headings, paragraphs, or buttons. */
+
+.center-this {
+    text-align: center;
+} /* centers only this h2 element using id: ID: Use when you want to target a specific, unique element on the page, such as a navigation bar or a specific form element.*/
+
+.block {
+    width: 80%;
+    background-color: burlywood;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.established{
+    font-style: italic;
+}
+
+a {
+    color: black;
+  }
+  
+  a:visited {
+    color: grey;
+  }
+  
+  a:hover {
+    color: brown;
+  }
+  a:active {
+    color: white;
+  }

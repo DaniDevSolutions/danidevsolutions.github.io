@@ -1,0 +1,104 @@
+<!DOCTYPE html> <!-- sets last html5 version for browser-->
+<html lang="en">
+  
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- for mobile view-->
+    <meta charset="utf-8" /> <!-- good set of special characters-->
+    <link rel="stylesheet" href="Cat_Photo_App_Mod.css"> <!-- link para arquivo CSS-->
+    <title>CatPhotoApp</title>
+    <!-- style below already Included in CSS
+    <style>
+      h1 {text-align:center}
+     </style>
+    -->
+</head>
+
+  <body>
+    <main>
+      
+      <div id="main-header">
+        <h1>CatPhotoApp</h1>
+        <div class="center-this">
+        <p class="established">Est. Dez 2024</p>
+        </div>
+      </div>
+      
+      <div class="block">
+      <section>
+        <div class="center-this">
+          <p>Everyone loves <a href="Photos/three_kittens.png">cute cats</a> online!</p>
+          <p>See more <a target="_blank" href="https://www.google.com/search?q=cat+photos&oq=cat+photos">cat photos</a> on the web. 🌐🐱.</p>
+          <a href="https://en.wikipedia.org/wiki/Cat"><img src="Photos/relaxing_cat.png" alt="A cute cat lying on its back."></a>
+        </div>
+      </section>
+      </div>
+
+      <div class="block">
+      <section>
+        <div class="center-this">
+        <h2>Cat Lists</h2>
+        <h3>Things cats love:</h3>
+           <ul>
+            <li>cat nip</li>
+            <li>laser pointers</li>
+            <li>lasagna</li>
+          </ul>
+        
+        <figure>
+          <img src="Photos/lasagna.png" alt="A slice of lasagna on a plate.">
+          <figcaption>Cats <em>love</em> lasagna.</figcaption>  
+        </figure>
+       
+        <h3>Top 3 things cats hate:</h3>
+        
+          <ol>
+            <li>flea treatment</li>
+            <li>thunder</li>
+            <li>other cats</li>
+          </ol>
+          
+            <figure>
+            <img src="Photos/5_kittens.png" alt="Five cats looking around a field.">
+            <figcaption>Cats <strong>hate</strong> other cats.</figcaption>  
+            </figure>
+          
+        </div>
+      </div>
+    </section>
+      
+      </section>
+      
+      <div class="block">
+      <section>
+        <div class="center-this">
+        <div class="center-this-h2"> <!--class for this h2 in CSS-->
+        <h2>Cat Form</h2>
+        </div>
+        <form action="Submit/submit_cat_photo.html">
+          <fieldset>
+            <legend>Is your cat an indoor or outdoor cat?</legend>
+            <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label>
+            <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+          </fieldset>
+          <fieldset>
+            <legend>What's your cat's personality?</legend>
+            <input id="loving" type="checkbox" name="personality" value="loving" checked> <label for="loving">Loving</label>
+            <input id="lazy" type="checkbox" name="personality" value="lazy"> <label for="lazy">Lazy</label>
+            <input id="energetic" type="checkbox" name="personality" value="energetic"> <label for="energetic">Energetic</label>
+          </fieldset>
+          <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      </div>
+      </section>
+    </main>
+    
+    <footer>
+      <p>
+        <!--No Copyright - <a target=_blank href="https://www.freecodecamp.org">freeCodeCamp.org</a>-->
+      </p>
+    </footer>
+  
+  </body>
+</html>
