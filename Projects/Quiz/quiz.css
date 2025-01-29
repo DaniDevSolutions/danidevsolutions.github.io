@@ -1,0 +1,242 @@
+    @media (prefers-reduced-motion: no-preference) {
+         * {
+        scroll-behavior: smooth;
+        }
+    }
+
+    body {
+      background: #f5f6f7;
+      color: #1b1b32;
+      font-family: 'Open Sans', sans-serif; 
+      margin: 2px;
+      border: 2px solid navy
+    }
+    
+    header {
+      width: 100%; /*Make the header take up the full width of its parent container*/
+      height: 50px;
+      background-color: #1b1b32;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      top: 0;
+	  /*Make the Header Sticky:*/
+	  position: -webkit-sticky;/* For Safari */
+	  position: sticky;
+	  z-index: 1000;/* Ensures the header stays above other content */
+    }
+    
+    /* em: adapts to the font size of the parent.
+    rem is consistent across the document since it references the root's font size.*/
+    #logo {
+      width: max(10rem, 18vw); /*The width of the logo will be 10rem if the viewport width is less than 888 pixels (160/18%). If the viewport width is greater than 888 pixels, the width of the logo will be 18vw.*/
+      background-color: #0a0a23;
+      aspect-ratio: 35 / 4; /*The aspect-ratio property is used to set the aspect ratio of an element. The aspect ratio is the ratio of the width to the height of an element.*/
+      padding: 0.4rem;
+    }
+    
+    h1 {
+      color: #f1be32;
+      font-size: min(5vw, 1.2em); /*The font size of the h1 element will be 5vw if the viewport width is less than 384 pixels (19.4/0.05). If the viewport width is greater than 384 pixels, the font size of the h1 element will be 1.2em.*/
+      text-align: center; /*Align the text for the h1 element in the center*/
+    }
+    
+    nav {
+      width: 50%;
+      max-width: 300px;
+      height: 50px;
+    }
+    
+    /* child combinator selector >: This selector targets only the direct children of an element.
+    .nav ul {}: This selector targets any <ul> element that is a descendant of an element with the class .nav
+    .nav > ul {}: This selector, on the other hand, targets only the <ul> elements that are DIRECT children of an 
+    element with the class .nav. It will not apply the styles to <ul> elements that are nested deeper within other 
+    elements inside .nav. */
+    nav > ul {
+      display: flex; /*Flexbox to evenly space its child li elements horizontally*/
+      justify-content: space-evenly;
+      flex-wrap: wrap;     /*Uses Flexbox to wrap the ul content because on small screens, the unordered list in the navigation bar overflows the right side of the screen*/
+      align-items: center;
+      padding-inline-start: 0;/*Removes the default padding on the left side of the unordered list*/
+      margin-block: 0; /* defines margins same as margin-top and margin-bottom */
+      height: 100%;
+    }
+    
+    nav > ul > li {
+      color: #dfdfe2;
+      margin: 0 0.2rem;
+      padding: 0.2rem;
+        display: block; /*to revert li elements back to block-level behavior. This ensures that each li element can take full width within its flex item, allowing more control over their individual styling and spacing. It avoids any unintended inline behavior that Flexbox might impose on them when directly inheriting from the parent ul.*/
+      }
+    
+    
+    /*when the cursor hovers over, the background color and text color are switched, and the cursor becomes a pointer*/
+    nav > ul > li:hover {
+      background-color: #dfdfe2;
+      color: #1b1b32;
+      cursor: pointer;
+    }
+    
+    li > a {
+      color: inherit; /* for a contrast ratio of at least 7:1, colors my not be automatically inherited due to browser interference */
+      text-decoration: none; /*remove the underline from the anchor tags*/
+    
+    }
+    
+    main {
+      padding-top: 50px;
+    }
+    
+    section {
+      width: 80%;
+      margin: 0 auto 10px auto;
+      max-width: 600px;
+     }
+    
+    h1,
+    h2 {
+      font-family: Verdana, Tahoma;
+    }
+    
+    h2 {
+      border-bottom: 4px solid #dfdfe2;
+      margin-top: 0px;
+      padding-top: 60px;
+    }
+    
+    .info {
+      padding: 10px 0 0 5px;
+    }
+    
+    .formrow {
+      margin-top: 30px;
+      padding: 0px 15px;
+    }
+    
+    input {
+      font-size: 1rem;
+    }
+    
+    .info label, .info input {
+      display: inline-block; /*To align the input boxes with each other*/
+    }
+    
+    .info input {
+      width: 50%;
+      text-align: left;
+    }
+    
+    .info label {
+      width: 10%;
+      min-width: 55px;
+      text-align: right;
+    }
+    
+    .question-block {
+      text-align: left;
+      display: block;
+      width: 100%;
+      margin-top: 20px;
+      padding-top: 5px;
+    }
+    
+    h3 {
+      margin-top: 5px;
+      padding-left: 15px;
+      font-size: 1.375rem;
+    }
+    
+    /*pseudo element h3::before => This method is helpful when you want to automatically add text before certain elements
+    for consistency, labeling, or design purposes. It keeps the HTML clean and allows you to
+    manage such prefixes directly through CSS. The pseudo element inherits properties from the h3 element unless specified
+    otherwise*/
+    h3::before {
+      content: "Question #";
+    }
+    
+    .question {
+      border: none;
+      padding-bottom: 0;
+    }
+    
+    .answers-list {
+      list-style: none; /*removes the bullet points from the list*/
+      padding: 0;
+    }
+    
+    button {
+      display: block;
+      margin: 40px auto;
+      width: 40%;
+      padding: 15px;
+      font-size: 1.438rem;
+      background: #d0d0d5;
+      border: 3px solid #3b3b4f;
+    }
+    
+    footer {
+      background-color: #2a2a40;
+      display: flex;
+      justify-content: center;
+    }
+    
+      /* contrast checker: https://coolors.co/contrast-checker/112a46-acc8e5 */
+    footer,
+    footer a {
+      color: #dfdfe2;
+    }
+    
+    /* for the address animation from the center to the right */
+	/*
+    @keyframes slidein {
+        
+        0% {
+          transform: translateX(80%);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+	*/
+	/*
+	@keyframes slidein {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(60%);
+    }
+    50% {
+        transform: translateX(-60%);
+    }
+    75% {
+        transform: translateX(60%);
+    }
+    100% {
+        transform: translateX(0);
+    }}
+	*/
+
+    address {
+      text-align: center;
+      padding: 0.3em;
+	  /*animation to shift footer right and back*/
+      /*animation: 4s ease-in-out 1s infinite alternate both running slidein;*/
+    }
+    
+    /*Below is a common pattern to visually hide text for only screen readers to read*/
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    address > p {
+        margin: 0;
+    }
