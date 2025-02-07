@@ -1,0 +1,86 @@
+/*The box-sizing: border-box property can be useful when applied to the html element in combination with other CSS rules, such as:
+Setting a Baseline: Defining box-sizing: border-box; for the html element ensures that any descendant elements that inherit this property (if explicitly set to inherit) will use the border-box model.
+Custom Frameworks or Styles: When building custom CSS frameworks or using specific design patterns, defining box-sizing at a higher level, like the html or body element, allows for more granular control and can serve as a base configuration.
+In practice, though, developers often prefer using a more inclusive approach to ensure all elements follow the same box-sizing model
+
+More direct approach for the box-sizing property is to apply it to all elements, including the html element, using the universal selector (*):
+*, *::before, *::after {
+  box-sizing: border-box;
+}*/
+  html {
+	box-sizing: border-box;
+  }
+  
+  *, *::before, *::after {
+	box-sizing: inherit;
+  }
+  
+  #piano {
+	background-color: #00471b;
+	width: 992px;
+	height: 290px;
+	margin: 80px auto;
+	padding: 90px 20px 0 20px; /*It's possible to center the .key element with this rule for padding. Without using grid or flexbox. It'd be more complicated to center the .keys element, for example, adjusting the margins of the .keys element to center it horizontally and, in partiular, vertically.*/
+	position: relative;/*The img element needs its parent to have a position set as a point of reference. When an element is positioned absolutely, it is taken out of the normal document flow, and positioned relative to the nearest positioned ancestor (one with position set to relative, absolute, fixed, or sticky).*/
+	border-radius: 10px;
+  }
+  
+  .keys {
+	background-color: #040404;
+	width: 949px;
+	height: 180px;
+	padding-left: 2px;
+	overflow: hidden;/* keys element collapses when the browser window is smaller than 768px.This property will hide any element that is pushed outside the set width value of .keys.*/
+  }
+  
+  .key {
+	background-color: #ffffff;
+	position: relative;
+	width: 41px;
+	height: 175px;
+	margin: 2px;
+	float: left;
+	border-radius: 0 0 3px 3px;
+  }
+  
+  .key.black--key::after {
+	background-color: #1d1e22;
+	content: "";/*By default, the pseudo-elements created by the ::before and ::after pseudo-selectors are empty, and the elements will not be rendered to the page. Setting the content property to an empty string "" will ensure the element is rendered to the page while still being empty.*/
+	position: absolute;
+	left: -18px;
+	width: 32px;
+	height: 100px;
+	border-radius: 0 0 3px 3px;
+  }
+  
+  .logo {
+	width: 200px;
+	position: absolute;
+	top: 23px;
+  }
+  
+  @media (max-width: 768px) {
+	#piano {
+	  width: 358px;
+	}
+  
+	.keys {
+	  width: 318px;
+	}
+  
+	.logo {
+	  width: 150px;
+	}
+  }
+  
+  @media (max-width: 1199px) and (min-width: 769px) {
+	#piano {
+	  width: 675px;
+	}
+  
+	.keys {
+	  width: 633px;
+	}
+  
+  
+  }
