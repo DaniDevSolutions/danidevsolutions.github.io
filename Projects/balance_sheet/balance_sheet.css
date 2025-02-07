@@ -1,0 +1,167 @@
+/*common set of properties in the selector span[class~="sr-only"] to ensure elements are completely hidden visually*/
+/*This selector targets <span> elements where the class attribute contains the word "sr-only" as one of its space-separated values.
+This means it will match <span class="sr-only"> as well as <span class="another-class sr-only yet-another-class">.*/
+span[class~="sr-only"] {
+	border: 0 !important;
+	clip: rect(1px, 1px, 1px, 1px) !important;
+	clip-path: inset(50%) !important;/*clip-path property determines the shape the clip property should take. Setting the clip-path property to the value of inset(50%) forms the clip-path into a rectangle within the element.*/
+	height: 1px !important;
+	width: 1px !important;
+	overflow: hidden !important;
+	white-space: nowrap !important;
+	position: absolute !important;/*The 3 following rules for position, padding and margin will ensure that not only are they no longer visible, but they are not even within the page view.*/
+	padding: 0 !important;
+	margin: -1px !important;
+  }
+  
+  html {
+	box-sizing: border-box; /*Reset the box model*/
+  }
+  
+  body {
+	font-family: sans-serif;
+	color: #0a0a23;
+  }
+  
+  h1 {
+	max-width: 37.25rem;
+	margin: 0 auto;
+	padding: 1.5rem 1.25rem;
+  }
+  
+  h1 .flex {
+	display: flex;
+	flex-direction: column-reverse;/* to make sense if announced by a screen reader*/
+	gap: 1rem;/*gap property to 1rem to create some space between the elements.*/
+  }
+  
+  h1 .flex span:first-of-type {/*as the 2 span elements are visually reversed */
+	font-size: 0.7em;
+  }
+  
+  h1 .flex span:last-of-type {
+	font-size: 1.2em;
+  }
+  
+  section {
+	max-width: 40rem;
+	margin: 0 auto;
+	border: 2px solid #d0d0d5;
+  }
+  
+  #years {
+	display: flex;
+	justify-content: flex-end;
+	position: sticky;
+	top: 0;
+	z-index: 999;/*  Adding position:sticky moved the element into its own stack. To ensure #years element does not get hidden by different stacks, z-index property is set to 999.*/
+	background: #0a0a23;
+	color: #fff;
+	padding: 0.5rem calc(1.25rem + 2px) 0.5rem 0;
+	margin: 0 -2px;
+  }
+  /*The span[class] syntax will target any span element that has a class attribute set, regardless of the attribute's value*/
+  #years span[class] {
+	font-weight: bold;
+	width: 4.5rem;
+	text-align: right;
+  }
+
+  .table-wrap {
+	padding: 0 0.75rem 1.5rem 0.75rem;
+  }
+  
+  table {
+	border-collapse: collapse;/*border-collapse: collapse  will allow cell borders to collapse into a single border, instead of a border around each cell. Below set the border property to 0 to hide the borders themselves.*/
+	border: 0;
+	width: 100%;
+	position: relative;
+	margin-top: 3rem;
+  }
+  
+  table caption {
+	color: #356eaf;
+	font-size: 1.3em;
+	font-weight: normal;
+	position: absolute;
+	top: -2.25rem;
+	left: 0.5rem;
+  }
+  
+  /*When giving a width to fill the viewport (100vw), with a minimum and maximum of 4rem, this approach ensures that the width is fixed, whereas setting width specifically would allow the elements to shrink to the container.*/
+  /*The explanation above about the 100vw is not confirmed by ChatGpt4*/
+  tbody td {
+	width: 100vw;
+	min-width: 4rem;
+	max-width: 4rem;
+  }
+  
+  tbody th {
+	width: calc(100% - 12rem);
+  }
+  
+  /* The [attribute="value"] selector targets any element that has an attribute with a specific value.
+  The key difference between tr[class="total"] and tr.total is that the first will select tr elements where the ONLY class is total. The second will select tr elements where the class includes total. */
+  tr[class="total"] {
+	border-bottom: 4px double #0a0a23;
+	font-weight: bold;
+  }
+  
+  tr[class="total"] th {
+	text-align: left;
+	padding: 0.5rem 0 0.25rem 0.5rem;
+  }
+  
+  tr.total td {
+	text-align: right;
+	padding: 0 0.25rem;
+  }
+  
+  tr.total td:nth-of-type(3) {
+	padding-right: 0.5rem;
+  }
+  
+  tr.total:hover {
+	background-color: #99c9ff;
+  }
+  
+  td.current {
+	font-style: italic;
+  }
+  
+  tr.data {
+	background-image: linear-gradient(to bottom, #dfdfe2 1.845rem, white 1.845rem);
+  }
+  
+  tr.data th {
+	text-align: left;
+	padding-top: 0.3rem;
+	padding-left: 0.5rem;
+  }
+  
+  /*The "tr.data th .description" selector targets the elements with the class set to "description" that are within the "th" elements in ".data" table rows.*/
+  tr.data th .description {
+	display: block;
+	font-weight: normal;
+	font-style: italic;
+	padding: 1rem 0 0.75rem;
+	margin-right: -13.5rem;
+  }
+  
+  tr.data td {
+	vertical-align: top;
+	padding: 0.3rem 0.25rem 0;
+	text-align: right;
+  }
+  
+  tr.data td:last-of-type{
+	padding-right:0.5rem;
+  }
+
+
+/*The :not() pseudo-selector is used to target all elements that do not match the selector - in this case, any of your span elements that do not have the sr-only class. This ensures that your earlier rules for the span[class~="sr-only"] selector are not overwritten.
+The following rule from steo 46 became unecessary in the final code and has been deleted.
+  span:not(.sr-only) {
+	font-weight: normal;
+  }
+*/
