@@ -1,142 +1,126 @@
 @media (prefers-reduced-motion: no-preference) {
 	*{
 		scroll-behavior: smooth;
-		}
 	}
-	
-	*, *::before, *::after {
-		box-sizing:border-box;
-	 }
-	
-	body{
-		background:#1E1E1E;
-		color:#D4D4D4;
-		font-family: 'Open Sans', sans-serif;
-		font-size:1rem;
-		line-height:2rem;
-		margin:0;
+}
+*, *::before, *::after {
+	box-sizing:border-box;
 	}
-	
-	header{
-		font-size:1.5rem;
-	}
-	/*
-	#container{
-		display:flex;
-		flex-direction: row;
-	}*/
-	
-	#navbar{
-		border-right:1px solid #BDC3C3;
-		display:flex;
-		flex-direction: column;
-		position:fixed;
-		min-width:290px;
-		top: 0;
-		left:0;
-		width: 300px;
-	  height: 100%;
-	}
-	
-	#nav-header{
-		padding:30px 20px;
-		min-width:320px;
-	}
-	
-	nav>ul {
+
+body{
+	background:#1E1E1E;
+	color:#D4D4D4;
+	font-family: 'Open Sans', sans-serif;
+	font-size:1rem;
+	line-height:2rem;
+	margin:0;
+}
+header{
+	font-size:1.5rem;
+}
+#navbar{
+	border-right:1px solid #BDC3C3;
+	display:flex;
+	flex-direction: column;
+	position:fixed;
+	min-width:290px;
+	top: 0;
+	left:0;
+	width: 300px;
+	height: 100%;
+}
+#nav-header{
+	padding:30px 20px;
+	min-width:320px;
+}
+nav>ul {
 	display: flex;
 	flex-direction:column;
 	align-items: left;
 	padding:0;
-	}
-	
-	.header-list{
-		list-style-type: none;
-		margin:0;
-	}
-	
-	ul[class=header-list]>li{
-		border-top:1px solid #BDC3C3;
-		display: block;
-		padding-left:20px
-	}
-	
-	ul[class=header-list]>li:last-of-type{
-	border-bottom:1px solid #BDC3C3;
-	}
-	
-	nav > ul > li:hover {
-		background-color: #D4D4D4;
-	  color: #1E1E1E;
-	  cursor: pointer;
-	}
-	
-	ul>li>a{
-		text-decoration: none;
-		color: inherit;/*keeps color coherent with li:hover*/
-		font-size:0.95rem;
-		/* 3 lines below to make the a element fill the whole li element for easy clicking*/
-		display: block;
-	  width: 100%;
-	  height: 100%
-	}
-	
-	#main-doc{
-		padding:20px;
-		margin-left:300px;
-	}
-	
-	pre{
-	max-width:100%;
-	}
-	
-	/* "language-html" and "language-css" classes are styled by Prism.js, except for the following:*/
-	body pre code{
-		background:#282828;
-		line-height:1.5rem;
-		padding: 10px;
-	  border-radius: 5px;
-	  /*Why display: block; Makes Sense for <pre><code> elements:
-		Default Display Property:
-		- By default, the <pre> element is a block-level element, but the <code> element is an inline element. Setting display: block; on the <code> element ensures it behaves as a block-level element within the <pre>.
-		Ensuring Block-Level Behavior:
-		- Setting display: block; on the <code> element ensures that it takes up the full width available and starts on a new line, which is consistent with the behavior of the <pre> element.
-		Styling Consistency:
-		- Ensuring the <code> element is a block-level element can help maintain consistent styling, especially if you apply padding, margins, or other block-level styles.*/
-	  display: block;
-		width:100%;
-	}
-	
-	#credits{
-		margin-top:50px;
-		/*border:2px solid red;*/
-		font-style: italic;
-		font-size:0.8rem;
-	}
-	
-	@media (max-width: 800px) {
-		#navbar{
-			width: 100%;
-			max-height:292px;
-			border-bottom:1px solid #BDC3C3;
-			background:#1E1E1E;/*make #main-doc run below navbar when scrolling*/
-		}
-	
-		#nav-header{
+}
+.header-list{
+	list-style-type: none;
+	margin:0;
+}
+
+ul[class=header-list]>li{
+	border-top:1px solid #BDC3C3;
+	display: block;
+	padding-left:20px
+}
+ul[class=header-list]>li:last-of-type{
+border-bottom:1px solid #BDC3C3;
+}
+nav > ul > li:hover {
+	background-color: #D4D4D4;
+	color: #1E1E1E;
+	cursor: pointer;
+}
+ul>li>a{
+	text-decoration: none;
+	color: inherit;/*keeps color coherent with li:hover*/
+	font-size:0.95rem;
+	/* 3 lines below to make the a element fill the whole li element for easy clicking*/
+	display: block;
+	width: 100%;
+	height: 100%
+}
+#main-doc{
+	padding:20px;
+	margin-left:300px;
+}
+pre{
+max-width:100%;
+}
+/* "language-html" and "language-css" classes are styled by Prism.js, except for the following:*/
+body pre code{
+	background:#282828;
+	line-height:1.5rem;
+	padding: 10px;
+	border-radius: 5px;
+	/*Why display: block; Makes Sense for <pre><code> elements:
+	Default Display Property:
+	- By default, the <pre> element is a block-level element, but the <code> element is an inline element. Setting display: block; on the <code> element ensures it behaves as a block-level element within the <pre>.
+	Ensuring Block-Level Behavior:
+	- Setting display: block; on the <code> element ensures that it takes up the full width available and starts on a new line, which is consistent with the behavior of the <pre> element.
+	Styling Consistency:
+	- Ensuring the <code> element is a block-level element can help maintain consistent styling, especially if you apply padding, margins, or other block-level styles.*/
+	display: block;
+	width:100%;
+}
+#credits{
+	margin-top:50px;
+	/*border:2px solid red;*/
+	font-style: italic;
+	font-size:0.8rem;
+}
+@media (max-width: 800px) {
+	#navbar{
+		width: 100%;
+		max-height:292px;
 		border-bottom:1px solid #BDC3C3;
-		}
-		
-		nav>ul {
-			overflow:auto; /*make ul scrollable*/
-			height:199px;/*adjust scrollbar height*/
-		}
-		
-		ul[class=header-list]>li:first-of-type{
-			border-top:none;
-		}
-	
-		#main-doc{
-			margin-top:300px;/*shift #main-doc downwards*/
-			margin-left:0;
-		}
+		background:#1E1E1E;/*make #main-doc run below navbar when scrolling*/
 	}
+
+	#nav-header{
+		border-bottom:1px solid #BDC3C3;
+	}
+	
+	nav>ul {
+		overflow:auto; /*make ul scrollable*/
+		height:199px;/*adjust scrollbar height*/
+	}
+	
+	ul[class=header-list]>li:first-of-type{
+		border-top:none;
+	}
+
+	#main-doc{
+		margin-top:300px;/*shift #main-doc downwards*/
+		margin-left:0;
+	}
+	section{
+		scroll-margin-top:300px;
+	}
+}
