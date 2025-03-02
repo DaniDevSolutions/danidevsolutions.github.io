@@ -90,10 +90,14 @@ body pre code{
 	width:100%;
 }
 #credits{
-	margin-top:50px;
+	margin-top:40px;
 	/*border:2px solid red;*/
 	font-style: italic;
-	font-size:0.8rem;
+	font-size:0.7rem;
+}
+#credits p{
+	margin:0;
+	
 }
 @media (max-width: 800px) {
 	#navbar{
@@ -121,6 +125,6 @@ body pre code{
 		margin-left:0;
 	}
 	section{
-		scroll-margin-top:300px;
+		scroll-margin-top:300px; /*make sections appear properly below the navbar*/
 	}
 }

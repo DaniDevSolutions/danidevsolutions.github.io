@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML/CSS Documentation</title>
     <link href="tech_doc.css" rel="stylesheet"> <!-- Link to the external stylesheet. Ideally before the link to the Prism.js-->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" /><!-- link to Prism.js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" /><!-- link to Prism.js -->
   </head>
   <body>
-  <!--<div id="container">-->
-      <nav id="navbar">
-        	<header id="nav-header">HTML/CSS Documentation</header>
+    <nav id="navbar">
+      <header id="nav-header">HTML/CSS Documentation</header>
         <ul class="header-list">
           <li><a class="nav-link" href="#Introduction_to_HTML_and_CSS">Introduction to HTML and CSS</a></li>
           <li><a class="nav-link" href="#Basic_HTML_Document_Structure">Basic HTML Document Structure</a></li>
@@ -27,17 +26,17 @@
           <li><a class="nav-link" href="#Adding_Transitions_and_Animations">Adding Transitions and Animations</a></li>
           <li><a class="nav-link" href="#Reference">Reference</a></li>
         </ul>
-      </nav>
+    </nav>
     <main id="main-doc">
-      <section class="main-section" id="Introduction_to_HTML_and_CSS">
+      <section class="main-section" id="Introduction_to_HTML_and_CSS" role="region" aria-labelledby="Introduction_to_HTML_and_CSS_header">
         <article>
-          <header>Introduction to HTML and CSS</header>
+          <header id="Introduction_to_HTML_and_CSS_header">Introduction to HTML and CSS</header>
             <p>Welcome to the world of web development! If you've ever wondered how websites are created or wanted to build one yourself, understanding HTML and CSS is essential. These two technologies form the backbone of the web, allowing you to structure content and style it to create engaging experiences.</p>  
         </article>
       </section>
-      <section class="main-section" id="Basic_HTML_Document_Structure">
+      <section class="main-section" id="Basic_HTML_Document_Structure" role="region" aria-labelledby="Basic_HTML_Document_Structure_header">
         <article>
-         <header>Basic HTML Document Structure</header>
+         <header id="Basic_HTML_Document_Structure_header">Basic HTML Document Structure</header>
           <p>Every web page starts with HTML. It's the standard markup language for creating web pages and applications.</p>
           <!-- escape the HTML characters inside the <code> element:
           < becomes &lt;
@@ -46,7 +45,7 @@
           " becomes &quot;
           ' becomes &#39;
           -->
-        <pre><code class="language-markup">
+          <pre><code class="language-markup">
         &lt;!DOCTYPE html&gt;
         &lt;html&gt;
           &lt;head&gt;
@@ -56,47 +55,47 @@
             &lt;h1&gt;Hello, World!&lt;/h1&gt;
           &lt;/body&gt;
         &lt;/html&gt;
-        </code></pre>
-        <h3>Breaking It Down:</h3>
-        <ul>
-          <li>&lt;!DOCTYPE html&gt; declares the document type as HTML5.</li>
-          <li>&lt;html&gt; wraps all the content on the page.</li>
-          <li>&lt;head&gt; contains meta-information like the page title.</li>
-          <li>&lt;body&gt; holds the content that displays in the browser window.</li>
-        </ul>
+          </code></pre>
+          <h3>Breaking It Down:</h3>
+          <ul>
+            <li>&lt;!DOCTYPE html&gt; declares the document type as HTML5.</li>
+            <li>&lt;html&gt; wraps all the content on the page.</li>
+            <li>&lt;head&gt; contains meta-information like the page title.</li>
+            <li>&lt;body&gt; holds the content that displays in the browser window.</li>
+          </ul>
         </article>
       </section>
-      <section class="main-section" id="Common_HTML_Elements">
+      <section class="main-section" id="Common_HTML_Elements" role="region" aria-labelledby="Common_HTML_Elements_header">
         <article>
-        <header>Common HTML Elements</header>
+          <header id="Common_HTML_Elements_header">Common HTML Elements</header>
           <p>HTML uses elements to define the structure and content of a webpage.</p>
           <h3>Headings and Paragraphs</h3>
           <p>Headings (&lt;h1&gt; to &lt;h6&gt;) are used for titles and subtitles.</p>
           <pre><code class="language-html">
-        &lt;h1&gt;Main Title&lt;/h1&gt;
-        &lt;h2&gt;Subheading&lt;/h2&gt;
-        &lt;p&gt;This is a paragraph providing more details.&lt;/p&gt;
+          &lt;h1&gt;Main Title&lt;/h1&gt;
+          &lt;h2&gt;Subheading&lt;/h2&gt;
+          &lt;p&gt;This is a paragraph providing more details.&lt;/p&gt;
           </code></pre>
           <h3>Lists</h3>
           <p>Lists organize content into bullet points or numbered items.</p>
           <ul>
             <li>Ordered List:</li>
           </ul>
-              <pre><code class="language-html">
+            <pre><code class="language-html">
         &lt;ol&gt;
           &lt;li&gt;First item&lt;/li&gt;
           &lt;li&gt;Second item&lt;/li&gt;
         &lt;/ol&gt;
-              </code></pre>
+            </code></pre>
           <ul>
             <li>Unordered List:</li>
           </ul>
-              <pre><code class="language-html">
+            <pre><code class="language-html">
         &lt;ul&gt;
           &lt;li&gt;Bullet point one&lt;/li&gt;
           &lt;li&gt;Bullet point two&lt;/li&gt;
         &lt;/ul&gt;
-              </code></pre>
+            </code></pre>
             <h3>Links and Images</h3>
             <p>Add hyperlinks and images to enrich your content.</p>
             <pre><code class="language-html"">
@@ -105,38 +104,38 @@
             </code></pre>
         </article>
       </section>
-      <section class="main-section" id="Introduction_to_CSS">
+      <section class="main-section" id="Introduction_to_CSS" role="region" aria-labelledby="Introduction_to_CSS_header">
         <article>
-        <header>Introduction to CSS</header>
-        <p>Cascading Style Sheets (CSS) bring life to your HTML by controlling the layout and appearance.</p>
-        <pre><code class="language-css">
+          <header id="Introduction_to_CSS_header">Introduction to CSS</header>
+          <p>Cascading Style Sheets (CSS) bring life to your HTML by controlling the layout and appearance.</p>
+          <pre><code class="language-css">
         body {
           background-color: #f0f0f0;
           font-family: Arial, sans-serif;
         }
-        </code></pre>
-        <h3>Key Concepts:</h3>
-        <ul>
-          <li>Selectors target HTML elements.</li>
-          <li>Properties define what you want to change.</li>
-          <li>Values specify the settings for those properties.</li>
-        </ul>
+          </code></pre>
+          <h3>Key Concepts:</h3>
+          <ul>
+            <li>Selectors target HTML elements.</li>
+            <li>Properties define what you want to change.</li>
+            <li>Values specify the settings for those properties.</li>
+          </ul>
         </article>
       </section>
-      <section class="main-section" id="Linking_CSS_to_Your_HTML">
-      <article>
-      <header>Linking CSS to Your HTML</header>
-        <p>There are several ways to apply CSS to HTML.</p>
-        <h3>External Stylesheet</h3>
-        <p>Link a CSS file using the &lt;link&gt; tag inside &lt;head&gt;.</p>
-        <pre><code class="language-css">
+      <section class="main-section" id="Linking_CSS_to_Your_HTML" role="region" aria-labelledby="Linking_CSS_to_Your_HTML_header">
+        <article>
+          <header id="Linking_CSS_to_Your_HTML_header">Linking CSS to Your HTML</header>
+          <p>There are several ways to apply CSS to HTML.</p>
+          <h3>External Stylesheet</h3>
+          <p>Link a CSS file using the &lt;link&gt; tag inside &lt;head&gt;.</p>
+          <pre><code class="language-css">
         &lt;head&gt;
           &lt;link rel=&quot;stylesheet&quot; href=&quot;styles.css&quot;&gt;
         &lt;/head&gt;
-        </code></pre>
-        <h3>Internal Stylesheet</h3>
-        <p>Include CSS directly within your HTML file using &lt;style&gt; tags.</p>
-        <pre><code class="language-html">
+          </code></pre>
+          <h3>Internal Stylesheet</h3>
+          <p>Include CSS directly within your HTML file using &lt;style&gt; tags.</p>
+          <pre><code class="language-html">
         &lt;head&gt;
           &lt;style&gt;
             h1 {
@@ -144,93 +143,93 @@
             }
           &lt;/style&gt;
         &lt;/head&gt;
-        </code></pre>
-        <h3>Inline Styles</h3>
-        <p>Apply styles directly to an element using the style attribute.</p>
-        <pre><code class="language-html">
+          </code></pre>
+          <h3>Inline Styles</h3>
+          <p>Apply styles directly to an element using the style attribute.</p>
+          <pre><code class="language-html">
         &lt;p style=&quot;color: gray;&quot;&gt;This is an inline styled paragraph.&lt;/p&gt;
-        </code></pre>
+          </code></pre>
         </article>
       </section>
-      <section class="main-section" id="CSS_Selectors_and_Properties">
+      <section class="main-section" id="CSS_Selectors_and_Properties" role="region" aria-labelledby="CSS_Selectors_and_Properties_header">
         <article>
-        <header>CSS Selectors and Properties</header>
-        <p>Selectors are patterns used to select the elements you want to style.</p>
-        <h3>Basic Selectors</h3>
-        <ul>
-          <li>Element Selector: Targets all instances of an element.</li>
-        </ul>
+          <header id="CSS_Selectors_and_Properties_header">CSS Selectors and Properties</header>
+          <p>Selectors are patterns used to select the elements you want to style.</p>
+          <h3>Basic Selectors</h3>
+          <ul>
+            <li>Element Selector: Targets all instances of an element.</li>
+          </ul>
           <pre><code class="language-css">
         p {
           font-size: 16px;
         }
-          </code></pre>
-        <ul>
-          <li>Class Selector: Targets elements with a specific class attribute.</li>
-        </ul>  
+            </code></pre>
+          <ul>
+            <li>Class Selector: Targets elements with a specific class attribute.</li>
+          </ul>  
           <pre><code class="language-css">
         .highlight {
           background-color: yellow;
         }
           </code></pre>
-        <ul>
-          <li>ID Selector: Targets a unique element with a specific ID.</li>
-        </ul>  
+          <ul>
+            <li>ID Selector: Targets a unique element with a specific ID.</li>
+          </ul>  
           <pre><code class="language-css">
         #header {
           text-align: center;
         }
           </code></pre>
-        <h3>Combining Selectors</h3>
-        <p>Apply styles more precisely.</p>
-        <pre><code class="language-css">
+          <h3>Combining Selectors</h3>
+          <p>Apply styles more precisely.</p>
+          <pre><code class="language-css">
         ul li {
           list-style-type: square;
         }
-        </code></pre>
+          </code></pre>
         </article>
       </section>
-      <section class="main-section" id="The_CSS_Box_Model">
-      <article>
-      <header>The CSS Box Model</header>
-      <p>Understanding the box model is crucial for layout and design.</p>
-      <p>Components:</p>
-      <ul>
-        <li>Content: The text or images in the box.</li>
-        <li>Padding: Space around the content.</li>
-        <li>Border: A line surrounding the padding and content.</li>
-        <li>Margin: Space outside the border.</li>
-      </ul>
-      <pre><code class="language-css">
+      <section class="main-section" id="The_CSS_Box_Model" role="region" aria-labelledby="The_CSS_Box_Model_header">
+        <article>
+          <header id="The_CSS_Box_Model_header">The CSS Box Model</header>
+          <p>Understanding the box model is crucial for layout and design.</p>
+          <p>Components:</p>
+          <ul>
+            <li>Content: The text or images in the box.</li>
+            <li>Padding: Space around the content.</li>
+            <li>Border: A line surrounding the padding and content.</li>
+            <li>Margin: Space outside the border.</li>
+          </ul>
+          <pre><code class="language-css">
         div {
           margin: 20px;
           padding: 15px;
           border: 2px solid black;
         }
-      </code></pre>
-      </article>
+          </code></pre>
+        </article>
       </section>
-      <section class="main-section" id="Positioning_Elements_with_CSS">
-      <article>
-      <header>Positioning Elements with CSS</header>
-      <p>Control the placement of elements on your page.</p>
-      <h3>Position Properties</h3>
-      <ul>
-        <li>Static: Default positioning.</li>
-        <li>Relative: Positioned relative to its normal position.</li>
-        <li>Absolute: Positioned relative to the nearest positioned ancestor.</li>
-        <li>Fixed: Positioned relative to the viewport.</li>
-      </ul>
-      <pre><code class="language-css">
+      <section class="main-section" id="Positioning_Elements_with_CSS" role="region" aria-labelledby="Positioning_Elements_with_CSS_header">
+        <article>
+          <header id="Positioning_Elements_with_CSS_header">Positioning Elements with CSS</header>
+          <p>Control the placement of elements on your page.</p>
+          <h3>Position Properties</h3>
+          <ul>
+            <li>Static: Default positioning.</li>
+            <li>Relative: Positioned relative to its normal position.</li>
+            <li>Absolute: Positioned relative to the nearest positioned ancestor.</li>
+            <li>Fixed: Positioned relative to the viewport.</li>
+          </ul>
+          <pre><code class="language-css">
         .footer {
           position: fixed;
           bottom: 0;
           width: 100%;
         }
-      </code></pre>
-      <h3>Floating Elements</h3>
-      <p>Float elements to align them side by side.</p>
-      <pre><code class="language-css">
+          </code></pre>
+          <h3>Floating Elements</h3>
+          <p>Float elements to align them side by side.</p>
+          <pre><code class="language-css">
         .left {
           float: left;
           width: 50%;
@@ -239,14 +238,14 @@
           float: right;
           width: 50%;
         }
-      </code></pre>
-      </article>
+          </code></pre>
+        </article>
       </section>
-      <section class="main-section" id="Responsive_Design_with_Media_Queries">
-      <article>
-      <header>Responsive Design with Media Queries</header>
-      <p>Create websites that look great on any device</p>
-      <pre><code class="language-css">
+      <section class="main-section" id="Responsive_Design_with_Media_Queries" role="region" aria-labelledby="Responsive_Design_with_Media_Queries_header">
+        <article>
+          <header id="Responsive_Design_with_Media_Queries_header">Responsive Design with Media Queries</header>
+          <p>Create websites that look great on any device</p>
+          <pre><code class="language-css">
         @media (max-width: 600px) {
             body {
               background-color: lightblue;
@@ -255,98 +254,98 @@
               display: none;
             }
         }
-      </code></pre>
-      <h3>Why Use Media Queries?</h3>
-      <ul>
-        <li>Adapt layout to different screen sizes.</li>
-        <li>Hide or show content based on device capabilities.</li>
-        <li>Enhance user experience across devices.</li>
-      </ul>
-      </article>
+          </code></pre>
+          <h3>Why Use Media Queries?</h3>
+          <ul>
+            <li>Adapt layout to different screen sizes.</li>
+            <li>Hide or show content based on device capabilities.</li>
+            <li>Enhance user experience across devices.</li>
+          </ul>
+        </article>
       </section>
-      <section class="main-section" id="Styling_Text_and_Fonts">
-      <article>
-      <header>Styling Text and Fonts</header>
-      <p>Make your typography stand out.</p>
-      <h3>Font Properties</h3>
-      <pre><code class="language-css">
+      <section class="main-section" id="Styling_Text_and_Fonts" role="region" aria-labelledby="Styling_Text_and_Fonts_header">
+        <article>
+          <header id="Styling_Text_and_Fonts_header">Styling Text and Fonts</header>
+          <p>Make your typography stand out.</p>
+          <h3>Font Properties</h3>
+          <pre><code class="language-css">
         h1 {
           font-family: 'Roboto', sans-serif;
           font-size: 2em;
           font-weight: bold;
           color: #333;
         }
-      </code></pre>
-      <h3>Text Decoration and Transformation</h3>
-      <pre><code class="language-css">
+          </code></pre>
+          <h3>Text Decoration and Transformation</h3>
+          <pre><code class="language-css">
         a {
           text-decoration: none;
         }
         p.uppercase {
           text-transform: uppercase;
         }
-      </code></pre>
-      </article>
+          </code></pre>
+        </article>
       </section>
-      <section class="main-section" id="Working_with_Colors_in_CSS">
-      <article>
-      <header>Working with Colors in CSS</header>
-      <p>Colors can be specified in various ways.</p>
-      <h3>Color Notations</h3>
-      <ul>
-        <li>Hexadecimal:</li>
-      </ul>
-      <pre><code class="language-css">
+      <section class="main-section" id="Working_with_Colors_in_CSS" role="region" aria-labelledby="Working_with_Colors_in_CSS_header">
+        <article>
+          <header id="Working_with_Colors_in_CSS_header">Working with Colors in CSS</header>
+          <p>Colors can be specified in various ways.</p>
+          <h3>Color Notations</h3>
+          <ul>
+            <li>Hexadecimal:</li>
+          </ul>
+          <pre><code class="language-css">
         .header {
           background-color: #ff5733;
         }
-      </code></pre>
-      <ul>
-        <li>RGB and RGBA:</li>
-      </ul>
-      <pre><code class="language-css">
+          </code></pre>
+          <ul>
+            <li>RGB and RGBA:</li>
+          </ul>
+          <pre><code class="language-css">
         .overlay {
           background-color: rgba(0, 0, 0, 0.5);
         }
-      </code></pre>
-      <ul>
-        <li>HSL and HSLA:</li>
-      </ul>
-      <pre><code class="language-css">
+          </code></pre>
+          <ul>
+            <li>HSL and HSLA:</li>
+          </ul>
+          <pre><code class="language-css">
         .button {
           color: hsl(120, 100%, 50%);
         }
-      </code></pre>
-      </article>
+          </code></pre>
+        </article>
       </section>
-      <section class="main-section" id="Using_CSS_Flexbox_and_Grid">
-      <article>
-      <header>Using CSS Flexbox and Grid</header>
-      <p>Modern layout modules for complex designs.</p>
-      <h3>Flexbox</h3>
-      <p>Arrange elements in a flexible way.</p>
-      <pre><code class="language-css">
+      <section class="main-section" id="Using_CSS_Flexbox_and_Grid" role="region" aria-labelledby="Using_CSS_Flexbox_and_Grid_header">
+        <article>
+          <header id="Using_CSS_Flexbox_and_Grid_header">Using CSS Flexbox and Grid</header>
+          <p>Modern layout modules for complex designs.</p>
+          <h3>Flexbox</h3>
+          <p>Arrange elements in a flexible way.</p>
+          <pre><code class="language-css">
         .container {
           display: flex;
           justify-content: space-between;
         }
-      </code></pre>
-      <h3>Grid</h3>
-      <p>Create two-dimensional layouts.</p>
-      <pre><code class="language-css">
+          </code></pre>
+          <h3>Grid</h3>
+          <p>Create two-dimensional layouts.</p>
+          <pre><code class="language-css">
         .grid {
           display: grid;</p>
           grid-template-columns: repeat(3, 1fr);
         }
-      </code></pre>
-      </article>
+         </code></pre>
+        </article>
       </section>
-      <section class="main-section" id="Adding_Transitions_and_Animations">
-      <article>
-      <header>Adding Transitions and Animations</header>
-      <p>Enhance interactivity with smooth effects.</p>
-      <h3>Transitions</h3>
-      <pre><code class="language-css">
+      <section class="main-section" id="Adding_Transitions_and_Animations" role="region" aria-labelledby="Adding_Transitions_and_Animations_header">
+        <article>
+          <header id="Adding_Transitions_and_Animations_header">Adding Transitions and Animations</header>
+          <p>Enhance interactivity with smooth effects.</p>
+          <h3>Transitions</h3>
+          <pre><code class="language-css">
         .button {
           background-color: blue;
           transition: background-color 0.3s ease;
@@ -354,9 +353,9 @@
         .button:hover {
           background-color: green;
         }
-      </code></pre>
-      <h3>Keyframe Animations</h3>
-      <pre><code class="language-css">
+          </code></pre>
+          <h3>Keyframe Animations</h3>
+          <pre><code class="language-css">
         @keyframes fadeIn {
           from {
             opacity: 0;
@@ -368,63 +367,63 @@
         .modal {
           animation: fadeIn 1s forwards;</p>
         }
-      </code></pre>
-      </article>
+         </code></pre>
+       </article>
       </section>
-      <section class="main-section" id="Reference">
-      <article>
-      <header>Reference</header>
-      <p>Deepen your understanding of HTML and CSS with these valuable resources:</p>
-      <h4>HTML Elements Reference:</h4>
-      <ul>
-        <li>MDN Web Docs - HTML Elements</li>
-        <li>W3Schools - HTML Tags</li>
-      </ul>
-      <h4>CSS Properties and Selectors:</h4>
-      <ul>
-        <li>MDN Web Docs - CSS Reference</li>
-        <li>CSS-Tricks - Almanac</li>
-      </ul>
-      <h4>Responsive Design:</h4>
-      <ul>
-        <li>A List Apart - Responsive Web Design</li>
-        <li>Google Developers - Responsive Web Design Basics</li>
-      </ul>
-      <h4>Flexbox and Grid Guides:</h4>
-      <ul>
-        <li>CSS-Tricks - A Complete Guide to Flexbox</li>
-        <li>CSS-Tricks - A Complete Guide to Grid</li>
-      </ul>
-      <h4>Color Reference:</h4>
-      <ul>
-        <li>Color Hex Color Codes</li>
-        <li>Adobe Color Wheel</li>
-      </ul>
-      <h4>Typography and Fonts:</h4>
-      <ul>
-        <li>Google Fonts</li>
-        <li>Web Typography Basics</li>
-      </ul>
-      <h4>Online Practice Platforms:</h4>
-      <ul>
-        <li>CodePen – Experiment with HTML/CSS in the browser.</li>
-        <li>freeCodeCamp – Interactive tutorials and projects.</li>
-      </ul>
-      <h4>Community and Support:</h4>
-      <ul>
-        <li>Stack Overflow – Ask questions and find answers.</li>
-        <li>Reddit Web Design Community – Discussions and resources.</li>
-      </ul>
-      <p>By exploring these references, you'll gain a deeper insight into web development and enhance your skills. Keep experimenting, keep learning, and most importantly, have fun building your own websites!</p>
-      <article>
+      <section class="main-section" id="Reference" role="region" aria-labelledby="Reference_header">
+        <article>
+          <header id="Reference_header">Reference</header>
+          <p>Deepen your understanding of HTML and CSS with these valuable resources:</p>
+          <h4>HTML Elements Reference:</h4>
+          <ul>
+            <li>MDN Web Docs - HTML Elements</li>
+            <li>W3Schools - HTML Tags</li>
+          </ul>
+          <h4>CSS Properties and Selectors:</h4>
+          <ul>
+            <li>MDN Web Docs - CSS Reference</li>
+            <li>CSS-Tricks - Almanac</li>
+          </ul>
+          <h4>Responsive Design:</h4>
+          <ul>
+            <li>A List Apart - Responsive Web Design</li>
+            <li>Google Developers - Responsive Web Design Basics</li>
+          </ul>
+          <h4>Flexbox and Grid Guides:</h4>
+          <ul>
+            <li>CSS-Tricks - A Complete Guide to Flexbox</li>
+            <li>CSS-Tricks - A Complete Guide to Grid</li>
+          </ul>
+          <h4>Color Reference:</h4>
+          <ul>
+            <li>Color Hex Color Codes</li>
+            <li>Adobe Color Wheel</li>
+          </ul>
+          <h4>Typography and Fonts:</h4>
+          <ul>
+            <li>Google Fonts</li>
+            <li>Web Typography Basics</li>
+          </ul>
+          <h4>Online Practice Platforms:</h4>
+          <ul>
+            <li>CodePen – Experiment with HTML/CSS in the browser.</li>
+            <li>freeCodeCamp – Interactive tutorials and projects.</li>
+          </ul>
+          <h4>Community and Support:</h4>
+          <ul>
+            <li>Stack Overflow – Ask questions and find answers.</li>
+            <li>Reddit Web Design Community – Discussions and resources.</li>
+          </ul>
+          <p>By exploring these references, you'll gain a deeper insight into web development and enhance your skills. Keep experimenting, keep learning, and most importantly, have fun building your own websites!</p>
+        </article>
       </section>
-      <section id="credits">
-        <div class="credits">
+      <section id="credits" role="region" aria-labelledby="credits_div">
+        <div class="credits" id="credits_div">
         <p>© 2025 by Daniel. Content assistance by Microsoft Copilot.</p>
+        <p>The code was written as part of a coding exercise from <a href="https://www.freecodecamp.org">FreeCodeCamp</a>. </p>
         </div>
-      <section>  
+      </section>  
     </main>
-    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
-    </body>
+  </body>
 </html>

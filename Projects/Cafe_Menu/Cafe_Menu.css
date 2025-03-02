@@ -71,7 +71,7 @@ body {
   
   /* FOOTER */
   
-  footer {
+  footer{
     font-size: 14px;
   }
   
@@ -79,18 +79,28 @@ body {
     margin-bottom: 5px;
   }
   
-  a {
+  .in-links {
     color: black;
   }
   
-  a:visited {
+  .in-links:visited {
     color: black;
   }
   
-  a:hover {
+  .in-links:hover {
     color: brown;
   }
   
-  a:active {
+  .in-links:active {
     color: brown;
+  }
+
+  .footer-2{
+  font-family: sans-serif;
+	text-align: center;
+	padding: 0.1rem 0;
+	width: 100%;
+	font-size: 62.5%;
+	background-color: rgba(223, 223, 226, 0.4);
+	margin-top: 3%;
   }

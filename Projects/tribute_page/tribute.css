@@ -100,15 +100,32 @@ header>nav>ul>li>a {
 	color: #1b1b32;
 	font-size: 1.2rem;
 }
+
 header>nav>ul>li>a:hover {
     color: brown;
 }
+
 header>nav>ul>li>a:active {
     color: red;
 }
+
 header>nav>ul>li>a:visited {
 	color: purple;
 }
+
+#ftr{
+	margin:0;
+	padding:0;
+}
+
+.p-footer{
+	font-family: inherit;
+	text-align: center;
+	margin-top:-1.5%;
+	padding-bottom: 0.5rem;
+	width: 100%;
+	font-size: 62.5%;
+  }
 
 /* Media Query */
 @media (max-width: 600px) {

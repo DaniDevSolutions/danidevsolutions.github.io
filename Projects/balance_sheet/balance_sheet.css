@@ -158,6 +158,15 @@ span[class~="sr-only"] {
 	padding-right:0.5rem;
   }
 
+  footer{
+	font-family: sans-serif;
+	text-align: center;
+	padding: 0.1rem 0;
+	width: 100%;
+	font-size: 62.5%;
+	background-color: #dfdfe2;
+	margin-top: 3%;
+  }
 
 /*The :not() pseudo-selector is used to target all elements that do not match the selector - in this case, any of your span elements that do not have the sr-only class. This ensures that your earlier rules for the span[class~="sr-only"] selector are not overwritten.
 The following rule from steo 46 became unecessary in the final code and has been deleted.

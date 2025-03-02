@@ -13,13 +13,13 @@
     }
     
     header {
-      width: 100%; /*Make the header take up the full width of its parent container*/
-      height: 50px;
-      background-color: #1b1b32;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      top: 0;
+    width: 100%; /*Make the header take up the full width of its parent container*/
+    height: 50px;
+    background-color: #1b1b32;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
 	  /*Make the Header Sticky:*/
 	  position: -webkit-sticky;/* For Safari */
 	  position: sticky;
@@ -78,7 +78,7 @@
     }
     
     li > a {
-      color: inherit; /* for a contrast ratio of at least 7:1, colors my not be automatically inherited due to browser interference */
+      color: inherit; /* for a contrast ratio of at least 7:1 and for the li:hover, prevents colors not being automatically inherited due to browser interference */
       text-decoration: none; /*remove the underline from the anchor tags*/
     
     }
@@ -184,6 +184,7 @@
     footer,
     footer a {
       color: #dfdfe2;
+      margin-bottom:1%;
     }
     
     /* for the address animation from the center to the right */
@@ -240,3 +241,25 @@
     address > p {
         margin: 0;
     }
+
+    .footer-2{
+      font-family: inherit;
+      text-align: center;
+      padding: 0;
+      margin-top:-1%;
+      margin-bottom:-1%;
+      width: 100%;
+      font-size: 62.5%;
+      background-color: #2a2a40;
+      position:static;
+      bottom:0;
+      left:0;
+      }
+
+      .footer-2 p{
+        color: #dfdfe2
+      }
+
+      .footer-2 a:visited{
+        color: lightskyblue
+      }

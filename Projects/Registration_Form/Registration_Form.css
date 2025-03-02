@@ -76,5 +76,12 @@ body {
     display: inline;/*Make the elements display in the same line*/
   }
   
+  footer{
+    font-family: inherit;
+    text-align: center;
+    padding: 0.5rem 0;
+    width: 100%;
+    font-size: 62.5%;
+    }
   
   

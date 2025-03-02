@@ -20,10 +20,12 @@
   
   .gallery {
     display: flex; /*flex: The flex CSS property sets how a flex item will grow or shrink to fit the space available in its flex container.*/
-    flex-direction: row; /*row: The flex container's main-axis is horizontal.*/
-    flex-wrap: wrap; /*wrap: The flex container is single-line or multi-line, based on the size of the container.*/
-    justify-content: center;
-    align-items: center;
+    flex-direction: row; /*row (default): The flex container's main-axis is horizontal.*/
+    flex-wrap: wrap; /*wrap: The flex container is single-line or multi-line, based on the size of the container. Default: nowrap*/
+    justify-content: center; /*Default: flex-start (Items are aligned to the start of the flex container)
+    distributes space between and around content items along the main axis of a flex container and the inline axis of grid and multicol containers.*/
+    align-items: center; /*Default: stretch (Items are stretched to fill the container along the cross axis).
+    It controls the alignment of items on the cross axis. In grid layout, it controls the alignment of items on the block axis within their grid areas.*/
     gap: 16px; /*gap: The gap CSS property sets the gaps (gutters) between rows and columns. It is a shorthand for row-gap and column-gap.*/
     max-width: 1400px; 
     margin: 0 auto; /* centers the element on the page */
@@ -35,13 +37,21 @@
     width: 100%;
     max-width: 350px;
     height: 300px;
-    object-fit: cover;
+    object-fit: cover; /*cover avoids distortion but can crop image*/
     border-radius: 10px;
     /*border: 2px solid blue*/
   }
   
-  .gallery::after {
+  .gallery::after { /*::after: The ::after pseudo-element can be used to insert some content after the content of an element.*/
     content: "";
     width: 350px;
   }
-  
+
+  footer{
+    font-family: sans-serif;
+    text-align: center;
+    padding: 0.1rem 0;
+    width: 100%;
+    font-size: 62.5%;
+    background-color: #dfdfe2;
+    }

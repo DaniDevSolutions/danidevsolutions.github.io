@@ -80,3 +80,24 @@ a {
   a:active {
     color: white;
   }
+
+  footer{
+    font-family: sans-serif;
+    text-align: center;
+    padding: 0.1rem 0;
+    width: 100%;
+    font-size: 62.5%;
+    background-color: rgba(223, 223, 226, 0.5);
+    margin-top: 3%;
+  }
+
+  a:visited:last-of-type {
+    color: darkslategray;
+  }
+
+  a:hover:last-of-type {
+    color: brown;
+  }
+  a:active:last-of-type {
+    color: white;
+  }

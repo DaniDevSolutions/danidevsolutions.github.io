@@ -109,3 +109,20 @@ inside the .daily-value container are styled with display: flex in the global p 
   padding: 0 8px;
   text-indent:-8px;
 }
+
+footer{
+	font-family: inherit;
+	text-align: center;
+	padding: 0.5rem 0;
+	width: 100%;
+	font-size: 62.5%;
+	background-color: #dfdfe2;
+	margin-top: 3%;
+  position:fixed;
+	bottom:0;
+	left:0;
+  }
+
+  footer p {
+    display: inline-block; /* Ensure the <p> element behaves like an inline block */
+  }
