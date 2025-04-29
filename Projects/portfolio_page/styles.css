@@ -1,0 +1,252 @@
+@media (prefers-reduced-motion: no-preference) {
+	* {
+	scroll-behavior: smooth;
+	}
+  }
+  
+  :root {
+	  --white: #F8F9FA;
+	  --black: #101010;
+	  --gray: #343A40;
+	}
+  
+  *, *::before, *::after {
+  box-sizing:border-box;
+  margin:0;
+	  }
+  
+  body {
+	font-family: 'Lato', 'Roboto', 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+	color: var(--white);
+	background-color: var(--black);
+  }
+  
+  nav {
+	width: 100%;
+	height:50px;
+	  z-index: 100;
+	background-color: var(--white);
+	position: fixed;
+	top:0;
+	left:0;
+  }
+  
+  nav ul {
+	display: flex; /*Flexbox to evenly space its child li elements horizontally*/
+	justify-content: flex-end;
+	flex-wrap: wrap;     /*Uses Flexbox to wrap the ul content because on small screens, the unordered list in the navigation bar overflows the right side of the screen*/
+	align-items: center;
+	padding-inline-start: 0;/*Removes the default padding on the left side of the unordered list*/
+	margin-block: 0; /* defines margins same as margin-top and margin-bottom */
+	height: 100%;
+  }
+  
+  nav ul li {
+	color:var(--black);
+	font-size:1.2rem;
+	font-weight:bold;
+	margin: 0 0.5rem;
+	padding: 0.8rem;
+	display: block; /*to revert li elements back to block-level behavior. This ensures that each li element can take full width within its flex item, allowing more control over their individual styling and spacing. It avoids any unintended inline behavior that Flexbox might impose on them when directly inheriting from the parent ul.*/
+	border-radius:10%;
+	}
+  
+  nav ul li:hover {
+	background-color: var(--black);
+	color: var(--white);
+	cursor: pointer;
+  }
+  
+  li a {
+	  color: inherit;
+	  text-decoration: none; 
+  }
+  
+  #welcome-section{
+  height: 100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+	text-align: center;
+  }
+  
+  h1{
+	font-size:3rem;
+  }
+   
+  #welcome-section h2{
+	margin-top:2rem;
+  font-size:1.4rem;
+  }
+  
+  #projects{
+	width:100%;
+	min-height:100vh;
+	display:flex;
+	flex-direction: row;
+	background-color:var(--gray);
+	/*overflow: hidden; /* Creates a new block formatting context to prevent margin collapsing*/
+	flex-wrap: wrap;
+	gap:3rem;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto; /* centers the element on the page */
+	padding:3rem 2rem;
+  }
+  
+  .project-tile{
+	display:block;
+	width: 100%;/*This ensures the h2 behaves like a block element by spanning the full width of the flex container.*/
+	text-align: center;
+  }
+  
+  #projects a {
+	border: 2px solid var(--white); /* Optional: Add a border for styling */
+	text-decoration:none;
+	color:var(--white);
+	font-weight:bold;
+	transition: transform 0.5s ease-out;
+	/* Ensure smooth transitions for all properties */
+	will-change: transform;
+  }
+  
+  /*
+  #show-all a:visited,
+  #projects a:visited {
+	color: #6a7ab5;
+  }
+  */
+  
+  #show-all a:hover,
+  #projects a:hover {
+	/*color: #ff7f50;*/
+	transform: scale(1.03);
+  }
+ 
+  /*
+  #show-all a:active,
+  #projects a:active {
+	color: #a83232;
+  }
+  */
+  
+  .responsive-image {
+	width: 450px; /* Set the desired width */
+	height: 350px; /* Automatically adjusts the height to maintain proportions */
+	object-fit: cover; /* Crops the sides or top/bottom while preserving aspect ratio */
+	overflow: hidden; 
+	display: block; /* Optional: Ensures proper spacing and alignment */
+	max-width: 100%; /* Ensures the image stays responsive in different screen sizes */
+  }
+  
+  .img-caption{
+	display: block;
+	text-align: center;
+	margin:0 auto;
+	padding: 1rem 0;
+  }
+  
+  #show-all{
+	display:block;
+	width:100%;
+	text-align: center;
+	margin:3rem 0;
+  }
+  
+  #show-all a{
+	display:inline-block;/*transform only works with a block element. However, block element makes the element take full width*/
+	padding: 1rem;
+  }
+  
+  #profile-section{
+	height: 100vh;
+	margin: 0 auto; /* centers the element on the page */
+	padding:2vh 2vw;
+	display: flex;
+	flex-direction: column; 
+	justify-content: center; 
+	align-items: center;
+	text-align: center; /* ensures text in child elements is centered */
+	gap: 2rem;
+  }
+  
+  #profile-section h1{
+	display:block;/*This ensures the h1 behaves like a block element by spanning the full width of the flex container.*/
+	width: 100%;
+  margin-bottom:5rem;
+  }
+  
+  #profile-section h3{
+  font-size: 2rem;
+  }
+
+.social-icons {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: flex-start; /* Align icons and text to the left */
+  gap: 2rem; /* Space between rows */
+}
+
+.icon {
+  display: flex; /* Enables text and icon to be in the same row */
+  align-items: center; /* Vertically align the text and icon */
+  text-decoration: none;
+  color: var(--white);
+  font-size: 2rem;
+  transition: transform 0.5s ease-out;
+  will-change: transform;
+}
+
+.icon span {
+  margin-left: 1rem; /* Space between the icon and text */
+  font-size: 1.5rem; /* Text font size */
+}
+  
+ .social-icons a img {
+  width: 36px;
+  height: 36px;
+  margin-right:-0.2rem;
+	position:relative;
+	right:1px;
+}
+
+  .social-icons a:hover {
+	transform: scale(1.1);
+  }
+
+
+  footer{
+	font-family: sans-serif;
+	text-align: center;
+	padding: 0.5rem 0;
+	background-color: var(--gray);
+	/*position: fixed;*/
+	bottom: 0;
+	left: 0;
+	width: 100%;
+  }
+  
+  .credits{
+	  margin-top:0;
+	  /*border:2px solid red;*/
+	  font-style: italic;
+	  font-size:0.7rem;
+  }
+
+@media (max-width: 1150px) {
+  #welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+		padding:10%;
+  }
+
+  #welcome-section h1,
+  #welcome-section h2 {
+    flex: 0 1 auto; /* Keeps h1 and h2  as flex items while allowing wrapping */
+  }
+}
